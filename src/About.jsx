@@ -8,11 +8,9 @@ const About = () => {
           <UndrawDesignerLife />
         </div>
         <div class="column">
-          <h1 className="ui header">About Me</h1>
+          <h1 id='about-header' className="ui header">About Myself</h1>
           <p>
-            Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident
-            corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum
-            molestias?
+            Hello, My name is Anish Kanswal
           </p>
         </div>
       </div>

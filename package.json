@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "webpack-dev-server --inline --mode development --open",
-  "cy:open": "yarn start & cypress open"
+    "start": "webpack-dev-server --inline --mode development --open",
+    "cy:open": "yarn start & cypress open"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-  "url": "https://github.com/Anish2504/porfolio-_challenge/issues"
+    "url": "https://github.com/Anish2504/porfolio-_challenge/issues"
   },
   "homepage": "https://github.com/Anish2504/porfolio-_challenge#readme",
   "dependencies": {
