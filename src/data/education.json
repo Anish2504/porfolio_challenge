@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "education": "Full Stack programmering, Craft Academy, Stockholm.",
+      "year": "2020, February Cohort"
+    },
+    {
+      "id": 2,
+      "education": "Masters in Tourism Management.",
+      "year": "2006/2008"
+    },
+    {
+      "id": 3,
+      "education": "Bsc.Hotel and Hospitality Management",
+      "year": "2003/2006"
+    }
+
+]
