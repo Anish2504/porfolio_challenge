@@ -38,7 +38,6 @@ class Education extends Component {
           </div>
           <div className="column">
             <h1 className="ui header">Education</h1>
-            <h1>  Hello    </h1>
           </div>
         </div>
         <div className="ui stackable four column grid">{educationList}</div>
