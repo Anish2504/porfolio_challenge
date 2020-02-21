@@ -1,13 +1,12 @@
 import React from "react";
 
 const EducationCard = ({ education }) => {
-	debugger
   return (
     <>
-      <div className="ui card">
-        <div className="content">
-          <h3 className="ui header">{education.education}</h3>
-          <div className="time">{education.year}</div>
+      <div class="ui card">
+        <div class="content">
+          <h3 class="ui header">{education.education}</h3>
+          <div class="description">{education.year}</div>
         </div>
       </div>
     </>

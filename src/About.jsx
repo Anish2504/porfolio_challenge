@@ -12,6 +12,7 @@ const About = () => {
           <p>
             Hello, My name is Anish Kanswal.I am learning to code with Craft academy.
           </p>
+          <p>Linked in :                , References</p>
           <div id="anish">
           <img src="https://thumbs.dreamstime.com/b/close-up-laptop-computer-tablet-office-desk-cyber-security-data-protection-business-technology-privacy-concept-close-up-142401674.jpg" />
           </div>

@@ -7,7 +7,7 @@ import Hello from "./Hello";
 import Header from "./Header";
 import Footer from "./Footer";
 import Contact from "./Contact";
-
+import Education from "./Education";
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         <Route exact path="/about" component={About}></Route>
         <Route exact path="/projects" component={Projects}></Route>
         <Route exact path="/contact" component={Contact}></Route>
-
+        <Route exact path="/eduaction" component={Education}></Route>
       </Switch>
       <Footer />
     </>
