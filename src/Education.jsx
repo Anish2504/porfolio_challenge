@@ -8,28 +8,28 @@ class Education extends Component {
     education: []
   };
   componentDidMount() {
-    axios.get('./src/data/education.json')
-      .then(response => {
-        this.setState({
-          education: response.data
-        })
-      })
+    axios.get("./src/data/education.json").then(response => {
+      this.setState({
+        education: response.data
+      });
+      console.log(response.data);
+    });
   }
 
   render() {
-
     const education = this.state.education;
     let educationList;
 
     if (education.length > 0) {
       educationList = education.map(item => {
         return (
-          <div id={'education-' + item.id} key={item.id}>
+          <div id={"education-" + item.id} key={item.id}>
             <EducationCard education={item} />
           </div>
         );
       });
     }
+
     return (
       <div className="ui main container">
         <div className="ui stackable two column grid">
