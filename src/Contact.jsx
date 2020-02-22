@@ -29,8 +29,12 @@ const encode = (data) => {
 
     render() {
       const { name,  company, email, message } = this.state;
+      
       return (
+        <div className="ui main container">
+          
         <form onSubmit={this.handleSubmit}>
+
             
           <p>
             <label>
@@ -56,6 +60,7 @@ const encode = (data) => {
             <button type="submit">Send</button>
           </p>
         </form>
+        </div>
       );
     }
   }
