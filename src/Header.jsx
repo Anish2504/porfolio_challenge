@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <nav className="ui fixed inverted menu">
       <div className="ui container">
-        <Link id="header" className="header item" to="/">
+        <Link id="header" className="header item" to=" / ">
           ANISH KANSWAL
         </Link>
         <div className="right menu">

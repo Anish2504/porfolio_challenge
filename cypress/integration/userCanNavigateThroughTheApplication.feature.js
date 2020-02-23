@@ -54,7 +54,7 @@ describe("User can navigate the app", () => {
     });
 
     it("displays hello ", () => {
-      cy.get("#hello").should("contain", "Hello");
+      cy.get("#hello").should("contain", "Junior Developer");
     });
 
     it("displays correct url", () => {
