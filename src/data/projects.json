@@ -1,17 +1,28 @@
 [
     {
       "id": 1,
-      "name": "RUBY on RAILS",
+      "name": "Ruby based ATM Application",
       "image": "https://miro.medium.com/max/3840/1*6h1kck2QmGaC89ERN_W3UA.jpeg",
-      "description": "These were my first few projects in which I build an application using the rails platform.The applications made on it were a Fizz Buzz game, virtual ATM and a virtual Library.I have used rspec for testing purposes"
+      "link": "https://github.com/Anish2504/atm_challenge_2019",
+      "description": "These were my first few projects in which I build an application using the rails platform.The applications made on it were a Fizz Buzz game, virtual ATM.I have used rspec for testing purposes"
     },
     {
       "id": 2,
-      "name": "REACT",
+      "name": "Ruby based Library Application",
+      "image": "https://miro.medium.com/max/3840/1*6h1kck2QmGaC89ERN_W3UA.jpeg",
+      "link": "https://github.com/Anish2504/library-challenge",
+      "description": "I made this application Ruby.I have also been constantly using Rspec for testing purposes for this application"                                  
+    },
+    
+    {
+      "id": 3,
+      "name": "REACT based Portfolio",
       "image": "https://cdn.starwebserver.se/shops/edument/files/cache/react-uppdatering-blogg_grande.jpg?_=1579534728",
-      "description": "I made m portfolio  with react.I have also been constantly using Cypress for testing purposes for this application.                                  "
+      "link": "https://github.com/Anish2504/portfolio_challenge",
+      "description": "I made my portfolio  with react.I have also been constantly using Cypress for testing purposes for this application"                                
     }
     ]
+
 
 
   

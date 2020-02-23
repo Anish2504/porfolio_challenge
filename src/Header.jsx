@@ -6,7 +6,6 @@ const Header = () => {
     <nav className="ui fixed inverted menu">
       <div className="ui container">
         <Link id="header" className="header item" to="/">
-          
           ANISH KANSWAL
         </Link>
         <div className="right menu">
@@ -16,7 +15,6 @@ const Header = () => {
             activeStyle={{ fontWeight: "bold" }}
             to="/about"
           >
-
             About Me
           </NavLink>
           <NavLink
@@ -25,29 +23,28 @@ const Header = () => {
             activeStyle={{ fontWeight: "bold" }}
             to="/projects"
           >
-           Projects
-            </NavLink>
-            <NavLink
-              id="education-tab"
-              className="ui item"
-              activeStyle={{ fontWeight: "bold" }}
-              to="/education"
-            >
-              Education
-              
-            </NavLink>
-            <NavLink
-              id="experience-tab"
-              className="ui item"
-              activeStyle={{ fontWeight: "bold" }}
-              to="/contact"
-            >
-              Contact
-            </NavLink>
-          </div>
+            Projects
+          </NavLink>
+          <NavLink
+            id="curriculumvitae-tab"
+            className="ui item"
+            activeStyle={{ fontWeight: "bold" }}
+            to="/curriculumvitae"
+          >
+            Curriculum Vitae
+          </NavLink>
+          <NavLink
+            id="contact-tab"
+            className="ui item"
+            activeStyle={{ fontWeight: "bold" }}
+            to="/contact"
+          >
+            Contact
+          </NavLink>
         </div>
-      </nav>
-    );
-  };
+      </div>
+    </nav>
+  );
+};
 
 export default Header;

@@ -1,68 +1,91 @@
 import React from "react";
-import UndrawEmailCapture from "react-undraw-illustrations/";
+import {UndrawDashboard} from "react-undraw-illustrations/";
 
 const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-        
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+class ContactForm extends React.Component {
+  constructor(props) {
+    
+    super(props);
+    this.state = { name: "", company: "", email: "", message: "" };
   }
-  class ContactForm extends React.Component {
-    constructor(props) {
-        <UndrawEmailCapture />
-      super(props);
-      this.state = { name: "",company: "", email: "", message: "" };
-    }
 
-    handleSubmit = e => {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...this.state })
-      })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
 
-      e.preventDefault();
-    };
-    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+    e.preventDefault();
+  };
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-    render() {
-      const { name,  company, email, message } = this.state;
-      
-      return (
-        <div className="ui main container">
-          
-        <form onSubmit={this.handleSubmit}>
+  render() {
+    const { name, company, email, message } = this.state;
 
+    return (
+      <div className="ui container">
+      <form className="ui form" onSubmit={this.handleSubmit}>
+        <div class='mail'>
+      < UndrawDashboard/>
+      </div>
+        <div className="form">
             
+            <label>
+              Your Name:{" "}
+              <input
+                type="text"
+                name="name"
+                value={name}
+                onChange={this.handleChange}
+              />
+            </label>
+          </div>
           <p>
             <label>
-              Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+              Company name:{" "}
+              <input
+                type="text"
+                name="company"
+                value={company}
+                onChange={this.handleChange}
+              />
             </label>
           </p>
           <p>
             <label>
-              Company name: <input type="text" name="company" value={company} onChange={this.handleChange} />
+              Your Email:{" "}
+              <input
+                type="email"
+                name="email"
+                value={email}
+                onChange={this.handleChange}
+              />
             </label>
           </p>
           <p>
             <label>
-              Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message" value={message} onChange={this.handleChange} />
+              Message:{" "}
+              <textarea
+                name="message"
+                value={message}
+                onChange={this.handleChange}
+              />
             </label>
           </p>
           <p>
             <button type="submit">Send</button>
           </p>
         </form>
-        </div>
-      );
-    }
+      </div>
+    );
   }
+}
 
-export default ContactForm
+export default ContactForm;
