@@ -40,7 +40,7 @@ class Curriculumvitae extends Component {
           <div className="column">
             <h1 className="ui header">Curriculum Vitae</h1>
           <button type="submit">Resume</button>
-
+          <button type="submit">GitHub</button>
           <button type="submit">Linkedin</button>
           </div>
         </div>
