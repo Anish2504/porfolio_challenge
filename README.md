@@ -11,7 +11,7 @@ Setup
 To access this code visit GitHub repo and complete the following steps:
 
 Create a repo and clone
-Have
+Work on VSCode
 Instructions
 Instruction
 
