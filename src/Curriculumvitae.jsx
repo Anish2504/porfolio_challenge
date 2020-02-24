@@ -39,15 +39,15 @@ class Curriculumvitae extends Component {
           <div className="column">
             <h1 className="ui header">Curriculum Vitae</h1>
 
-            <button class="ui Github button">
+            <button class="ui inverted blue button">
               <i class="github icon"></i>
               Github
             </button>
-            <button class="ui Resume button">
+            <button class="ui inverted blue button">
               <i class="Resume icon"></i>
               Resume
             </button>
-            <button class="ui linkedin button">
+            <button class="ui inverted blue button">
               <i class="linkedin icon"></i>
               LinkedIn
             </button>
