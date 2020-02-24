@@ -8,8 +8,7 @@ class Curriculumvitae extends Component {
     curriculumvitae: []
   };
   componentDidMount() {
-    axios.get("./src/data/curriculumvitae.json")
-    .then(response => {
+    axios.get("./src/data/curriculumvitae.json").then(response => {
       this.setState({
         curriculumvitae: response.data
       });
@@ -39,15 +38,25 @@ class Curriculumvitae extends Component {
           </div>
           <div className="column">
             <h1 className="ui header">Curriculum Vitae</h1>
-          <button type="submit">Resume</button>
-          <button type="submit">GitHub</button>
-          <button type="submit">Linkedin</button>
+
+            <button class="ui Github button">
+              <i class="github icon"></i>
+              Github
+            </button>
+            <button class="ui Resume button">
+              <i class="Resume icon"></i>
+              Resume
+            </button>
+            <button class="ui linkedin button">
+              <i class="linkedin icon"></i>
+              LinkedIn
+            </button>
           </div>
         </div>
-        <div className="ui stackable four column grid">{curriculumvitaeList}</div>
+        <div className="ui stackable four column grid">
+          {curriculumvitaeList}
+        </div>
       </div>
-
-
     );
   }
 }
