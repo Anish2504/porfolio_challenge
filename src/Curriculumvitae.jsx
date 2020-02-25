@@ -49,6 +49,17 @@ class Curriculumvitae extends Component {
             </button>
             <button class="ui inverted blue button">
               <i class="linkedin icon"></i>
+              <a
+                className="linkedinlink"
+                id="linkedin-image"
+                target="_blank"
+                href="https://www.linkedin.com/in/anish-kanswal-20b28041/"
+              >
+                <img
+                  className="linkedin"
+                  src="dist/images/download.png"
+                ></img>
+              </a>
               LinkedIn
             </button>
           </div>
